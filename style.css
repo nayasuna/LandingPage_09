@@ -30,10 +30,8 @@ section {
   padding: 50px 20%;
 }
 
-
-
 .logo img {
-  width: 100px;
+  width: 120px;
   height: auto;
   display: flex;
 }
@@ -43,6 +41,20 @@ section {
   cursor: pointer;
   display: none;
 }
+
+.vector * {
+  box-sizing: border-box;
+}
+
+/*.vector1 {
+  width: 1090px;
+  height: auto;
+  position: relative;
+  transform: translate(547.72px, 148.94px); 
+  overflow: visible;
+  transform: rotate(1deg);
+  float: right;
+} */
 
 nav {
   display: flex;    
@@ -95,18 +107,13 @@ nav ul li a:hover {
 .home {
   padding-left: 18px;
   display: flex;
-  //grid-template-columns: repeat(2, 2fr);
+  //grid-template-columns: repeat(2, 2fr);style.css
   align-items: center;
+  margin-bottom: 90px;
 }
 
-.apk img {
-  width: 100%;
-  
-}
-
-
- .headline {
-  margin-top: 60px;
+.headline {
+  margin-top: 10px;
   padding-left: 85px;
   margin-bottom: 10px;
 }
@@ -162,17 +169,12 @@ nav ul li a:hover {
   font-size: 14px;
 }
 
-
-.about-us{
-  display: flex;
-  padding-left: 70px;
-  background:white;
+/*.vector2 {
+  height: 1273.95px;
+  width: 1698.60px;
+  position: relative;
+  transform: translate(747.72px, 148.94px);
+  overflow: visible;
+  transform: rotate(9.96deg)
 }
 
-.about-container img {
-  width: 600px;
-}
-
-.text-about {
-  float:right;
-}
