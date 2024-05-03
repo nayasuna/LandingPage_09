@@ -27,11 +27,11 @@ body {
 }
 
 .wave {
-  min-height: 100vh;
+  //min-height: 100vh;
   width: 100%;
   //display: flex;
   position: relative;
-}
+} 
 
 svg {
   position: absolute;
@@ -59,16 +59,6 @@ section {
   box-sizing: border-box;
 }
 
-/*vector1 {
-  width: 1090px;
-  height: auto;
-  position: relative;
-  transform: translate(547.72px, 148.94px); 
-  overflow: visible;
-  transform: rotate(1deg);
-  float: right;
-} */
-
 nav {
   display: flex;    
   justify-content: space-around;
@@ -85,11 +75,10 @@ nav ul {
   width: 60%;
   justify-content: space-between;
   font-size: medium;
-  
 }
 
 nav ul li a{
-  color: #ffffff;
+  color: white;
   margin-right: 30px;
   text-decoration: none;
 }
@@ -115,19 +104,16 @@ nav ul li a:hover {
 
 .vector-container2 {
   position: absolute;
-  bottom: -200px; /* Menurunkan gambar vektor */
-  left: -60px;
+  bottom: -90px; /* Menurunkan gambar vektor */
+  left: -120px;
   z-index: 1;
-  transform: rotate(180deg); /* Memutar gambar vektor */
+  transform: rotate(176deg); /* Memutar gambar vektor */
 }
 
 .vector2 {
   height: auto;
-  width: 1020px;
+  width: 770px;
 }
-
-
-
 
 .basic-button {
   border-radius: 89px;
@@ -223,13 +209,65 @@ nav ul li a:hover {
   font-size: 14px;
 }
 
-
-/*.vector2 {
-  height: 1273.95px;
-  width: 1698.60px;
-  position: relative;
-  transform: translate(747.72px, 148.94px);
-  overflow: visible;
-  transform: rotate(9.96deg)
+.about-us{
+  padding-left: 50px;
+  display: grid;
+  //gap: 20px;
+  grid-template-columns: repeat(2, 2fr);
+  padding-right: 10px;
+  position:relative;
+  background:white;
 }
 
+.about-container img {
+  width: 500px;
+  height: auto;
+  position:relative;
+ 
+  
+}
+
+.text-about {
+    align-self: center; /* Menyusun teks-about secara vertikal di tengah */
+    padding: 20px; /* Tambahkan padding sesuai kebutuhan */
+    position: relative; /* Mengatur posisi relatif */
+    z-index: 1; /* Pastikan teks-about berada di atas gambar */
+}
+.text-about p {
+  color: #151515;
+  margin-bottom: 20px;
+
+}
+
+.read {
+  border-radius: 89px;
+  border-style: solid;
+  border-color:  #D8904B;
+  border-width: 1px;
+  padding: 9px 19px 9px 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background-color: #D8904B;
+  color:white;
+}
+
+.read:hover {
+  color: white;
+}
+
+.phone {
+  position: absolute;
+  color: gray;
+}
+
+.blog-container {
+  background:white;
+  display: flex;
+}
+
+.blog-container h2 {
+  color: #151515;
+}
