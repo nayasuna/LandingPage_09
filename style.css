@@ -21,7 +21,7 @@
 
 body {
   font-family: "poppins", sans-serif;
-  width: 1490px;
+  //width: 1490px;
   margin: 0 auto;
   background: linear-gradient(#201616 0%, #CD934D 100%);
 }
@@ -215,7 +215,6 @@ nav ul li a:hover {
   //gap: 20px;
   grid-template-columns: repeat(2, 2fr);
   padding-right: 10px;
-  position:relative;
   background:white;
 }
 
@@ -238,6 +237,10 @@ nav ul li a:hover {
   margin-bottom: 20px;
 
 }
+
+
+
+
 
 .read {
   border-radius: 89px;
