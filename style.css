@@ -238,10 +238,6 @@ nav ul li a:hover {
 
 }
 
-
-
-
-
 .read {
   border-radius: 89px;
   border-style: solid;
@@ -265,12 +261,56 @@ nav ul li a:hover {
   position: absolute;
   color: gray;
 }
+.blog {
+  background:white;
+  padding-left: 50px;
+  display: grid;
+  //gap: 20px;
+  grid-template-columns: repeat(2, 2fr);
+  padding-right: 10px;
+
+}
 
 .blog-container {
-  background:white;
   display: flex;
 }
 
-.blog-container h2 {
-  color: #151515;
+.blog-container h3 {
+  display:flex;
+}
+
+.btnn {
+    align-self: center; /* Menyusun teks-about secara vertikal di tengah */
+    left: 700px; /* Tambahkan padding sesuai kebutuhan */
+    position: relative; /* Mengatur posisi relatif */
+    z-index: 1;
+}
+.btnleft {
+  width: 30px;
+  height: 30px;
+  background-color: white; /* Ubah sesuai warna yang diinginkan */
+  border: none;
+  border-radius: 50%; /* Membuat tombol berbentuk bulat */
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btnright {
+  width: 30px;
+  height: 30px;
+  background-color: #D8904B; /* Ubah sesuai warna yang diinginkan */
+  border: none;
+  border-radius: 50%; /* Membuat tombol berbentuk bulat */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
