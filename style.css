@@ -21,30 +21,22 @@
 
 body {
   font-family: "poppins", sans-serif;
-  //width: 1490px;
   margin: 0 auto;
   background: linear-gradient(#201616 0%, #CD934D 100%);
 }
 
-.wave {
-  //min-height: 100vh;
-  width: 100%;
-  //display: flex;
-  position: relative;
-} 
 
-svg {
-  position: absolute;
-  b0ttom: 0;
-  left: 0;
-}
-
-section {
-  padding: 50px 20%;
+nav {
+  display: flex;    
+  justify-content: space-around;
+  color: #ffffff;
+  align-items: center;
+  gap: 12rem;
+  height: 70px;
 }
 
 .logo img {
-  width: 120px;
+  width: 110px;
   height: auto;
   display: flex;
 }
@@ -55,64 +47,21 @@ section {
   display: none;
 }
 
-.vector * {
-  box-sizing: border-box;
-}
-
-nav {
-  display: flex;    
-  justify-content: space-around;
- /* padding: 40px 0;*/
-  color: #ffffff;
-  height: 70px;
-  align-items: center;
-  gap: 20rem;
-
-}
 nav ul {
   display: flex;
   list-style: none;
-  width: 60%;
   justify-content: space-between;
   font-size: medium;
+  gap: 8rem;
 }
 
 nav ul li a{
   color: white;
-  margin-right: 30px;
   text-decoration: none;
 }
 
 nav ul li a:hover {
   color: #FFCE8B;
-}
-
-.vector-container {
-  position: relative; /* Memastikan gambar vector terkait dengan navbar */
-}
-
-.vector-container {
-  position: absolute;
-  top: -100px; /* Menurunkan vektor lebih tinggi daripada navbar */
-  right: 0;
-}
-
-.vector1 {
-  height: auto;
-  width: 1020px;
-}
-
-.vector-container2 {
-  position: absolute;
-  bottom: -90px; /* Menurunkan gambar vektor */
-  left: -120px;
-  z-index: 1;
-  transform: rotate(176deg); /* Memutar gambar vektor */
-}
-
-.vector2 {
-  height: auto;
-  width: 770px;
 }
 
 .basic-button {
@@ -134,6 +83,10 @@ nav ul li a:hover {
   color: #FFCE8B;
 }
 
+section {
+  padding: 50px 20%;
+}
+
 .home {
   padding-left: 50px;
   display: grid;
@@ -141,15 +94,6 @@ nav ul li a:hover {
   grid-template-columns: repeat(2, 2fr);
   padding-right: 10px;
   position:relative;
-}
-
-.apk img {
-  width: 100%;
-  height: auto;
-  position:relative;
-  z-index: 1;
-  //grid-row: 2;
-  //padding-right: 100px;
 }
 
 .headline {
@@ -168,7 +112,6 @@ nav ul li a:hover {
 .headline p {
   color: #FFFFFF;
   margin-bottom: 30px;
- 
 }
 
 .btn2 {
@@ -200,117 +143,50 @@ nav ul li a:hover {
   padding-left: 4px;
 }
 
-.head2 h3 {
+.head2 span {
   margin-bottom: 10px;
   font-size: 2rem;
+  font-weight: bold;
 }
 
-.head2 a {
+.head2 p {
   font-size: 14px;
 }
 
-.about-us{
-  padding-left: 50px;
-  display: grid;
-  //gap: 20px;
-  grid-template-columns: repeat(2, 2fr);
-  padding-right: 10px;
-  background:white;
-}
-
-.about-container img {
-  width: 500px;
-  height: auto;
-  position:relative;
- 
-  
-}
-
-.text-about {
-    align-self: center; /* Menyusun teks-about secara vertikal di tengah */
-    padding: 20px; /* Tambahkan padding sesuai kebutuhan */
-    position: relative; /* Mengatur posisi relatif */
-    z-index: 1; /* Pastikan teks-about berada di atas gambar */
-}
-.text-about p {
-  color: #151515;
-  margin-bottom: 20px;
-
-}
-
-.read {
-  border-radius: 89px;
-  border-style: solid;
-  border-color:  #D8904B;
-  border-width: 1px;
-  padding: 9px 19px 9px 19px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  background-color: #D8904B;
-  color:white;
-}
-
-.read:hover {
-  color: white;
-}
-
-.phone {
+.custom-shape-divider-bottom-1716740976 {
   position: absolute;
-  color: gray;
-}
-.blog {
-  background:white;
-  padding-left: 50px;
-  display: grid;
-  //gap: 20px;
-  grid-template-columns: repeat(2, 2fr);
-  padding-right: 10px;
-
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-.blog-container {
-  display: flex;
+.custom-shape-divider-bottom-1716740976 svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 70px;
 }
 
-.blog-container h3 {
-  display:flex;
+.custom-shape-divider-bottom-1716740976 .shape-fill {
+  fill: #FFFFFF;
 }
 
-.btnn {
-    align-self: center; /* Menyusun teks-about secara vertikal di tengah */
-    left: 700px; /* Tambahkan padding sesuai kebutuhan */
-    position: relative; /* Mengatur posisi relatif */
-    z-index: 1;
-}
-.btnleft {
-  width: 30px;
-  height: 30px;
-  background-color: white; /* Ubah sesuai warna yang diinginkan */
-  border: none;
-  border-radius: 50%; /* Membuat tombol berbentuk bulat */
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.bfr-container {
+  position: relative;
+  background-color: white;
 }
 
-.btnright {
-  width: 30px;
-  height: 30px;
-  background-color: #D8904B; /* Ubah sesuai warna yang diinginkan */
-  border: none;
-  border-radius: 50%; /* Membuat tombol berbentuk bulat */
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.apk img {
+  width: 100%;
+  //height: auto;
+  position:relative;
+  //z-index: 1;
+  //grid-row: 2;
+  //padding-right: 100px;
 }
+
+
+
